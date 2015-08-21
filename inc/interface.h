@@ -52,6 +52,7 @@ int mainMenu()
          break;
        }
      }
+  LcdClear();
   gotoXY(25,0);
   LcdString (" Menu");
   gotoXY(0,2);
@@ -64,11 +65,10 @@ int mainMenu()
   menuTicket(3);
   LcdString (" Calibrer");
   delay(100);
-  LcdClear();
-
 }
 void optMenu()
 {
+  choix =NULL;
   menuScroll = 2;
   menuBehavor();
   if ( choix == NULL ) { choix = 1; }
@@ -114,40 +114,34 @@ void steve()
   LcdClear();
   LcdString("steve");
   delay(1000);
-  LcdClear();
 }
 void doCalibrate()
 {
   LcdClear();
   LcdString("doCalibrate");
   delay(1000);
-  LcdClear();
 }
 void optSpeedUp()
 {
   LcdClear();
   LcdString("optSpeedUp");
   delay(1000);
-  LcdClear();
 }
 void optSpeedDown()
 {
   LcdClear();
   LcdString("optSpeedDown");
   delay(1000);
-  LcdClear();
 }
 void optIncubTime()
 {
   LcdClear();
   LcdString("optIncubTime");
   delay(1000);
-  LcdClear();
 }
 void optAlertType()
 {
   LcdClear();
   LcdString("optAlertType");
   delay(1000);
-  LcdClear();
 }
